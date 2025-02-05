@@ -70,3 +70,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+/Arcade Casino/Library/Artifacts
+/Arcade Casino/Library
+/Arcade Casino/UserSettings
+/Arcade Casino/Logs
+*.cache
