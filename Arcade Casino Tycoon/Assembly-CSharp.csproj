@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\OptionsMenu.cs" />
     <Compile Include="Assets\Scripts\SaveSystem.cs" />
     <Compile Include="Assets\Scripts\SaveData.cs" />
+    <Compile Include="Assets\Scripts\WalletManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\TextMesh Pro\Shaders\TMPro.cginc" />
