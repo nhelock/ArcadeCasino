@@ -16,12 +16,6 @@ public class SlotReel : MonoBehaviour
     private bool spinning = false;
     private Coroutine spinRoutine;
 
-
-
-    // SLOT REEL VARIABLES
-
-
-
     void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -29,19 +23,18 @@ public class SlotReel : MonoBehaviour
 
     void Start()
     {
-        //WEIGHTED symbol list
         foreach (Sprite s in symbols)
         {
             if (s == jackpotSymbol)
-            {   // 1x jackpot
+            {
                 weightedSymbols.Add(s);
             }
             else if (System.Array.Exists(rareSymbols, r => r == s))
-            {   // 1x rare
+            {
                 weightedSymbols.Add(s); 
             }
             else
-            {   // Common symbols 5x
+            {
                 for (int i = 0; i < 5; i++) 
                 {
                     weightedSymbols.Add(s);
