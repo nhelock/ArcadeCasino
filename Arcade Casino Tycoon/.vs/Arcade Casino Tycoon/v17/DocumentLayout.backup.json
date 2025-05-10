@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\arcadecasino\\arcade casino tycoon\\assets\\wheelspin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|solutionrelative:assets\\wheelspin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\arcadecasino\\arcade casino tycoon\\assets\\walletmanager1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|solutionrelative:assets\\walletmanager1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|c:\\users\\nicho\\onedrive\\documents\\github\\arcadecasino\\arcade casino tycoon\\assets\\roulettewheel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|solutionrelative:assets\\roulettewheel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\assets\\roulettebetmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|solutionrelative:assets\\roulettebetmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\assets\\rouletteuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|solutionrelative:assets\\rouletteuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\assets\\walletmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|solutionrelative:assets\\walletmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\assets\\wheelspin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|solutionrelative:assets\\wheelspin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\assets\\walletui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00D82F64-2138-6BB3-7AAE-CCA9340CBCEF}|Assembly-CSharp.csproj|solutionrelative:assets\\walletui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,31 +43,88 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WheelSpin.cs",
-              "DocumentMoniker": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\WheelSpin.cs",
-              "RelativeDocumentMoniker": "Assets\\WheelSpin.cs",
-              "ToolTip": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\WheelSpin.cs",
-              "RelativeToolTip": "Assets\\WheelSpin.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAADwvy0AAAA0AAAAAAAAAA==",
+              "Title": "WalletManager1.cs",
+              "DocumentMoniker": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\WalletManager1.cs",
+              "RelativeDocumentMoniker": "Assets\\WalletManager1.cs",
+              "ToolTip": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\WalletManager1.cs",
+              "RelativeToolTip": "Assets\\WalletManager1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T13:25:34.719Z",
+              "WhenOpened": "2025-05-10T02:31:12.022Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "RouletteWheel.cs",
+              "DocumentMoniker": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\RouletteWheel.cs",
+              "RelativeDocumentMoniker": "Assets\\RouletteWheel.cs",
+              "ToolTip": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\RouletteWheel.cs",
+              "RelativeToolTip": "Assets\\RouletteWheel.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAcwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T01:36:23.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RouletteBetManager.cs",
+              "DocumentMoniker": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\RouletteBetManager.cs",
+              "RelativeDocumentMoniker": "Assets\\RouletteBetManager.cs",
+              "ToolTip": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\RouletteBetManager.cs",
+              "RelativeToolTip": "Assets\\RouletteBetManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T01:15:46.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RouletteUIController.cs",
+              "DocumentMoniker": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\RouletteUIController.cs",
+              "RelativeDocumentMoniker": "Assets\\RouletteUIController.cs",
+              "ToolTip": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\RouletteUIController.cs",
+              "RelativeToolTip": "Assets\\RouletteUIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T20:58:40.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WalletUI.cs",
+              "DocumentMoniker": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\WalletUI.cs",
+              "RelativeDocumentMoniker": "Assets\\WalletUI.cs",
+              "ToolTip": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\WalletUI.cs",
+              "RelativeToolTip": "Assets\\WalletUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T15:23:22.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WheelSpin.cs",
+              "DocumentMoniker": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\WheelSpin.cs",
+              "RelativeDocumentMoniker": "Assets\\WheelSpin.cs",
+              "ToolTip": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\WheelSpin.cs",
+              "RelativeToolTip": "Assets\\WheelSpin.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwEcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T13:25:34.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "WalletManager.cs",
               "DocumentMoniker": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\WalletManager.cs",
               "RelativeDocumentMoniker": "Assets\\WalletManager.cs",
               "ToolTip": "C:\\Users\\Nicho\\OneDrive\\Documents\\GitHub\\ArcadeCasino\\Arcade Casino Tycoon\\Assets\\WalletManager.cs",
               "RelativeToolTip": "Assets\\WalletManager.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDEAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAA4wC8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T13:58:37.488Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
