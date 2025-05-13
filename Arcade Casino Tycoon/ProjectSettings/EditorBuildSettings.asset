@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/RouletteWheelScene.unity
     guid: 40e8f5c3ff60bf243b0d30e6e4a2e929
+  - enabled: 1
+    path: Assets/Blackjack2.unity
+    guid: 86a0fc85c1ede564ba7a84a36658bdbf
   m_configObjects: {}

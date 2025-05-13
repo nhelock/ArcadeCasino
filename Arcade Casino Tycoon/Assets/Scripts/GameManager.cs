@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -32,8 +33,6 @@ public class GameManager : MonoBehaviour
         hitBtn.onClick.AddListener(() => HitClicked());
         standBtn.onClick.AddListener(() => StandClicked());
         betBtn.onClick.AddListener(() => BetClicked());
-
-        UpdateWalletDisplay();
     }
 
     private void DealClicked()
@@ -42,34 +41,22 @@ public class GameManager : MonoBehaviour
         dealerScript.ResetHand();
         dealerScoreText.gameObject.SetActive(false);
         mainText.gameObject.SetActive(false);
+        dealerScoreText.gameObject.SetActive(false);
         GameObject.Find("Deck").GetComponent<DeckScript>().Shuffle();
-
         playerScript.StartHand();
         dealerScript.StartHand();
-
         scoreText.text = "Hand: " + playerScript.handValue.ToString();
         dealerScoreText.text = "Hand: " + dealerScript.handValue.ToString();
         hideCard.GetComponent<Renderer>().enabled = true;
-
         dealBtn.gameObject.SetActive(false);
         hitBtn.gameObject.SetActive(true);
         standBtn.gameObject.SetActive(true);
         standBtnText.text = "Stand";
+        pot = 40;
+        betsText.text = "Bets: $" + pot.ToString();
+        playerScript.AdjustMoney(-20);
+        cashText.text = "$" + playerScript.GetMoney().ToString();
 
-        if (WalletManager.Instance.SubtractMoney(20))
-        {
-            pot = 40;
-            betsText.text = "Bets: $" + pot.ToString();
-            UpdateWalletDisplay();
-        }
-        else
-        {
-            mainText.text = "Not enough money!";
-            mainText.gameObject.SetActive(true);
-            dealBtn.gameObject.SetActive(true);
-            hitBtn.gameObject.SetActive(false);
-            standBtn.gameObject.SetActive(false);
-        }
     }
 
     private void HitClicked()
@@ -78,26 +65,16 @@ public class GameManager : MonoBehaviour
         {
             playerScript.GetCard();
             scoreText.text = "Hand: " + playerScript.handValue.ToString();
-
-            if (playerScript.handValue > 20)
-            {
-                RoundOver();
-            }
+            if (playerScript.handValue > 20) RoundOver();
         }
     }
 
     private void StandClicked()
     {
         standClicks++;
-        if (standClicks > 1)
-        {
-            RoundOver();
-        }
-        else
-        {
-            HitDealer();
-            standBtnText.text = "Call";
-        }
+        if (standClicks > 1) RoundOver();
+        HitDealer();
+        standBtnText.text = "Call";
     }
 
     private void HitDealer()
@@ -106,11 +83,7 @@ public class GameManager : MonoBehaviour
         {
             dealerScript.GetCard();
             dealerScoreText.text = "Hand: " + dealerScript.handValue.ToString();
-
-            if (dealerScript.handValue > 20)
-            {
-                RoundOver();
-            }
+            if (dealerScript.handValue > 20) RoundOver();
         }
     }
 
@@ -121,35 +94,37 @@ public class GameManager : MonoBehaviour
         bool player21 = playerScript.handValue == 21;
         bool dealer21 = dealerScript.handValue == 21;
 
-        if (standClicks < 2 && !playerBust && !dealerBust && !player21 && !dealer21)
-            return;
-
+        if (standClicks < 2 && !playerBust && !dealerBust && !player21 && !dealer21) return;
         bool roundOver = true;
 
         if (playerBust && dealerBust)
         {
             mainText.text = "All Bust: Bets returned";
-            WalletManager.Instance.AddMoney(pot / 2);
+            playerScript.AdjustMoney(pot / 2);
         }
+    
         else if (playerBust || (!dealerBust && dealerScript.handValue > playerScript.handValue))
         {
             mainText.text = "Dealer wins!";
         }
+
         else if (dealerBust || playerScript.handValue > dealerScript.handValue)
         {
             mainText.text = "You win!";
-            WalletManager.Instance.AddMoney(pot);
+            playerScript.AdjustMoney(pot);
         }
+
         else if (playerScript.handValue == dealerScript.handValue)
         {
             mainText.text = "Push: Bets returned";
-            WalletManager.Instance.AddMoney(pot / 2);
+            playerScript.AdjustMoney(pot / 2);
         }
         else
         {
             roundOver = false;
         }
 
+        // Set ui up for next move / hand / turn
         if (roundOver)
         {
             hitBtn.gameObject.SetActive(false);
@@ -158,8 +133,8 @@ public class GameManager : MonoBehaviour
             mainText.gameObject.SetActive(true);
             dealerScoreText.gameObject.SetActive(true);
             hideCard.GetComponent<Renderer>().enabled = false;
+            cashText.text = "$" + playerScript.GetMoney().ToString();
             standClicks = 0;
-            UpdateWalletDisplay();
         }
     }
 
@@ -167,22 +142,9 @@ public class GameManager : MonoBehaviour
     {
         Text newBet = betBtn.GetComponentInChildren(typeof(Text)) as Text;
         int intBet = int.Parse(newBet.text.ToString().Remove(0, 1));
-
-        if (WalletManager.Instance.SubtractMoney(intBet))
-        {
-            pot += intBet * 2;
-            betsText.text = "Bets: $" + pot.ToString();
-            UpdateWalletDisplay();
-        }
-        else
-        {
-            mainText.text = "Not enough money!";
-            mainText.gameObject.SetActive(true);
-        }
-    }
-
-    void UpdateWalletDisplay()
-    {
-        cashText.text = "$" + WalletManager.Instance.Wallet.ToString();
+        playerScript.AdjustMoney(-intBet);
+        cashText.text = "$" + playerScript.GetMoney().ToString();
+        pot += (intBet * 2);
+        betsText.text = "Bets: $" + pot.ToString();
     }
 }
