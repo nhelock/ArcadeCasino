@@ -498,8 +498,8 @@ MonoBehaviour:
   doubleButton: {fileID: 1528165238}
   cashOutButton: {fileID: 369092505}
   coinImage: {fileID: 1739931828}
-  heads: {fileID: -424283621, guid: e2825ed086208fe4994e235f5086613f, type: 3}
-  tails: {fileID: 870264806, guid: 8b3e61760b958bf42960e45dece7113e, type: 3}
+  heads: {fileID: -424283621, guid: fe6757cbf8900f54c82b1e3a8b5d6556, type: 3}
+  tails: {fileID: 870264806, guid: 5945e4d9f7b20b745b1407bdeca23904, type: 3}
   flipDuration: 1.5
   gameOverPanel: {fileID: 337376531}
   gameOverText: {fileID: 1649336060}
@@ -1183,7 +1183,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bad656f348b139446b018a5f72f378e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 13a1c5356d28237499d3921d25be1f23, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3118,7 +3118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -424283621, guid: e2825ed086208fe4994e235f5086613f, type: 3}
+  m_Sprite: {fileID: -424283621, guid: fe6757cbf8900f54c82b1e3a8b5d6556, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
