@@ -61,4 +61,24 @@ public class WalletManager
         PlayerPrefs.SetInt(WalletKey, Wallet);
         PlayerPrefs.Save();
     }
+
+    public void AddToJackpot(int amount)
+    {
+        Jackpot += amount;
+        SaveJackpot();
+    }
+
+    public void ResetJackpot()
+    {
+        Jackpot = 1000;
+        SaveJackpot();
+    }
+
+    private void SaveJackpot()
+    {
+        PlayerPrefs.SetInt(JackpotKey, Jackpot);
+        PlayerPrefs.Save();
+    }
+
+
 }
