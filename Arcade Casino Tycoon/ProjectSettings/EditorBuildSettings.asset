@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SimpleSlotsScene.unity
     guid: b2ac00def22bbfa4781aca408067609c
+  - enabled: 1
+    path: Assets/RouletteWheelScene.unity
+    guid: 40e8f5c3ff60bf243b0d30e6e4a2e929
   m_configObjects: {}
