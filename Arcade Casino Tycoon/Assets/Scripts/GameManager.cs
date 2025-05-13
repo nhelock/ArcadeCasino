@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public GameObject hideCard;
     int pot = 0;
 
+
     void Start()
     {
         dealBtn.onClick.AddListener(() => DealClicked());
@@ -147,4 +148,25 @@ public class GameManager : MonoBehaviour
         pot += (intBet * 2);
         betsText.text = "Bets: $" + pot.ToString();
     }
+
+    public void OpenOptions()
+    {
+        if (OptionsMenu.Instance == null)
+        {
+            Debug.LogError("OptionsMenu.Instance is NULL! It hasn't been instantiated.");
+        }
+        else
+        {
+            OptionsMenu.Instance.ToggleOptionsMenu();
+        }
+    }
+
+    void Update()
+{
+    if (Input.GetKeyDown(KeyCode.Escape))
+    {
+        Debug.Log("GameManager detected Escape.");
+        OptionsMenu.Instance?.ToggleOptionsMenu();
+    }
+}
 }
