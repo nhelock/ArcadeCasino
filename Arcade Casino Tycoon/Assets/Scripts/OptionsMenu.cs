@@ -19,14 +19,15 @@ public class OptionsMenu : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null)
+        if (Instance != null && Instance != this)
         {
-            Destroy(gameObject); // Prevent duplicates
+            Destroy(gameObject);
             return;
         }
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        Debug.Log("[OptionsMenu] Initialized as Singleton.");
     }
 
     private void Start()
@@ -39,6 +40,7 @@ public class OptionsMenu : MonoBehaviour
     {
         if (optionsPanel != null) optionsPanel.SetActive(false);
         if (saveConfirmationPanel != null) saveConfirmationPanel.SetActive(false);
+        Debug.Log("[OptionsMenu] UI Initialized.");
     }
 
     private void EnsureEventSystem()
@@ -48,41 +50,60 @@ public class OptionsMenu : MonoBehaviour
             GameObject eventSystem = new GameObject("EventSystem");
             eventSystem.AddComponent<EventSystem>();
             eventSystem.AddComponent<StandaloneInputModule>();
-            DontDestroyOnLoad(eventSystem);
+            Debug.Log("[OptionsMenu] Created new EventSystem.");
         }
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
-    {
-        Debug.Log("Escape key pressed - toggling Options Menu.");
-        ToggleOptionsMenu();
-    }
+        {
+            Debug.Log("[OptionsMenu] Escape pressed - toggling menu.");
+            ToggleOptionsMenu();
+        }
     }
 
     public void ToggleOptionsMenu()
     {
-        if (optionsPanel == null) return;
+        if (optionsPanel == null)
+        {
+            Debug.LogWarning("[OptionsMenu] OptionsPanel reference is missing!");
+            return;
+        }
 
-        bool willOpen = !optionsPanel.activeSelf;
-        optionsPanel.SetActive(willOpen);
-        Time.timeScale = willOpen ? 0f : 1f;
+        bool isOpening = !optionsPanel.activeSelf;
+        optionsPanel.SetActive(isOpening);
+
+        // Pause/unpause game
+        Time.timeScale = isOpening ? 0f : 1f;
+        Debug.Log($"[OptionsMenu] Menu {(isOpening ? "opened" : "closed")}. TimeScale: {Time.timeScale}");
     }
 
     public void SaveGame()
     {
-        gameData.SaveGame();
-        ShowSaveConfirmation("Game Saved Successfully!");
+        if (gameData != null)
+        {
+            gameData.SaveGame();
+            ShowSaveConfirmation("Game Saved Successfully!");
+            Debug.Log("[OptionsMenu] Game saved.");
+        }
+        else
+        {
+            Debug.LogError("[OptionsMenu] GameData reference is missing!");
+        }
     }
 
     private void ShowSaveConfirmation(string message)
     {
-        if (saveConfirmationPanel != null)
+        if (saveConfirmationPanel != null && saveConfirmationText != null)
         {
             saveConfirmationText.text = message;
             saveConfirmationPanel.SetActive(true);
             StartCoroutine(HideSaveConfirmation());
+        }
+        else
+        {
+            Debug.LogWarning("[OptionsMenu] Save confirmation references missing!");
         }
     }
 
@@ -94,7 +115,7 @@ public class OptionsMenu : MonoBehaviour
 
     public void ExitGame()
     {
-        Debug.Log("Exiting Game...");
+        Debug.Log("[OptionsMenu] Exiting game...");
         Application.Quit();
     }
 
@@ -112,5 +133,6 @@ public class OptionsMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         if (optionsPanel != null) optionsPanel.SetActive(false);
+        Debug.Log($"[OptionsMenu] Scene loaded: {scene.name}. Menu closed.");
     }
 }

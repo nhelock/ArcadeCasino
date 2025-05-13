@@ -3,19 +3,28 @@ using UnityEngine;
 public class PersistentUILoader : MonoBehaviour
 {
     [SerializeField] private GameObject optionsMenuPrefab;
-    private static GameObject optionsMenuInstance;
+    private static bool isInitialized = false;
 
     private void Awake()
     {
-        if (optionsMenuInstance != null)
+        if (isInitialized)
         {
             Destroy(gameObject);
             return;
         }
 
-        optionsMenuInstance = Instantiate(optionsMenuPrefab);
-        DontDestroyOnLoad(optionsMenuInstance);
-        Debug.Log("Options menu instantiated from PersistentUILoader.");
+        if (optionsMenuPrefab != null)
+        {
+            GameObject instance = Instantiate(optionsMenuPrefab);
+            DontDestroyOnLoad(instance);
+            Debug.Log("[PersistentUILoader] OptionsMenu instantiated.");
+        }
+        else
+        {
+            Debug.LogError("[PersistentUILoader] OptionsMenu prefab not assigned!");
+        }
+
+        isInitialized = true;
         DontDestroyOnLoad(gameObject);
     }
 }
