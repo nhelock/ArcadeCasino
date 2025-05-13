@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 150245364}
   - component: {fileID: 150245365}
   - component: {fileID: 150245366}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Card1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 221930562}
   - component: {fileID: 221930561}
   - component: {fileID: 221930560}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: MainCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -596,7 +596,7 @@ GameObject:
   - component: {fileID: 260415489}
   - component: {fileID: 260415488}
   - component: {fileID: 260415487}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: DealBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -716,7 +716,7 @@ GameObject:
   - component: {fileID: 330424792}
   - component: {fileID: 330424793}
   - component: {fileID: 330424794}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Card2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -879,7 +879,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 821033540, y: 306674880}
+  m_AnchoredPosition: {x: NaN, y: NaN}
   m_SizeDelta: {x: 440, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &368140144
@@ -892,7 +892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 368140145}
   - component: {fileID: 368140146}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Dealer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1088,38 +1088,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1382,44 +1350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ComponentVersion: 1
-  m_LightType: 4
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeIntensity: 1
-  m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 0000000053bac6bae74c3d0a
-  m_LightCookieSprite: {fileID: 0}
-  m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_OverlapOperation: 0
-  m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
-  m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
-  m_ShadowVolumeIntensityEnabled: 0
-  m_ShadowVolumeIntensity: 0.75
-  m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 360
-  m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
@@ -1447,7 +1377,7 @@ GameObject:
   - component: {fileID: 629197928}
   - component: {fileID: 629197927}
   - component: {fileID: 629197926}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: BetBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1567,7 +1497,7 @@ GameObject:
   - component: {fileID: 666608557}
   - component: {fileID: 666608559}
   - component: {fileID: 666608558}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: CashText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1646,7 +1576,7 @@ GameObject:
   - component: {fileID: 725888913}
   - component: {fileID: 725888915}
   - component: {fileID: 725888914}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1726,7 +1656,7 @@ GameObject:
   - component: {fileID: 752920695}
   - component: {fileID: 752920694}
   - component: {fileID: 752920693}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: HitBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1944,7 +1874,7 @@ GameObject:
   - component: {fileID: 1008861132}
   - component: {fileID: 1008861134}
   - component: {fileID: 1008861133}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2024,7 +1954,7 @@ GameObject:
   - component: {fileID: 1016197334}
   - component: {fileID: 1016197333}
   - component: {fileID: 1016197332}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: StandBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2242,7 +2172,7 @@ GameObject:
   - component: {fileID: 1058385513}
   - component: {fileID: 1058385515}
   - component: {fileID: 1058385514}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: MainText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2321,7 +2251,7 @@ GameObject:
   - component: {fileID: 1137224384}
   - component: {fileID: 1137224383}
   - component: {fileID: 1137224382}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Hit7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2517,7 +2447,7 @@ GameObject:
   - component: {fileID: 1184507790}
   - component: {fileID: 1184507789}
   - component: {fileID: 1184507788}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: HideCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2615,7 +2545,7 @@ GameObject:
   - component: {fileID: 1239779650}
   - component: {fileID: 1239779652}
   - component: {fileID: 1239779651}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Scoreboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2833,7 +2763,7 @@ GameObject:
   - component: {fileID: 1460613212}
   - component: {fileID: 1460613214}
   - component: {fileID: 1460613213}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: BetText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3010,7 +2940,7 @@ GameObject:
   - component: {fileID: 1492803381}
   - component: {fileID: 1492803380}
   - component: {fileID: 1492803379}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Hit6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3108,7 +3038,7 @@ GameObject:
   - component: {fileID: 1598079852}
   - component: {fileID: 1598079851}
   - component: {fileID: 1598079850}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Hit1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3206,7 +3136,7 @@ GameObject:
   - component: {fileID: 1613227420}
   - component: {fileID: 1613227419}
   - component: {fileID: 1613227418}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Hit3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3304,7 +3234,7 @@ GameObject:
   - component: {fileID: 1656260185}
   - component: {fileID: 1656260187}
   - component: {fileID: 1656260186}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: DealerScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3383,7 +3313,7 @@ GameObject:
   - component: {fileID: 1723610804}
   - component: {fileID: 1723610803}
   - component: {fileID: 1723610802}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Hit4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3481,7 +3411,7 @@ GameObject:
   - component: {fileID: 1781409123}
   - component: {fileID: 1781409122}
   - component: {fileID: 1781409121}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Hit2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3677,7 +3607,7 @@ GameObject:
   - component: {fileID: 1867077815}
   - component: {fileID: 1867077817}
   - component: {fileID: 1867077816}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3756,7 +3686,7 @@ GameObject:
   - component: {fileID: 1905011640}
   - component: {fileID: 1905011642}
   - component: {fileID: 1905011641}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3835,7 +3765,7 @@ GameObject:
   - component: {fileID: 1923428741}
   - component: {fileID: 1923428743}
   - component: {fileID: 1923428742}
-  m_Layer: 5
+  m_Layer: 1
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3916,7 +3846,7 @@ GameObject:
   - component: {fileID: 1929175490}
   - component: {fileID: 1929175489}
   - component: {fileID: 1929175488}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Hit8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4014,7 +3944,7 @@ GameObject:
   - component: {fileID: 1935200383}
   - component: {fileID: 1935200382}
   - component: {fileID: 1935200381}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Hit5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4312,7 +4242,7 @@ GameObject:
   - component: {fileID: 2113927904}
   - component: {fileID: 2113927903}
   - component: {fileID: 2113927902}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Deck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

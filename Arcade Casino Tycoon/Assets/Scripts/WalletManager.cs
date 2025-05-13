@@ -1,40 +1,27 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class WalletManager
 {
-    private static bool hi = false;
     private static WalletManager hInstance;
     public static WalletManager Instance
     {
         get
         {
-            if (!hi)
-            {
+            if (hInstance == null)
                 hInstance = new WalletManager();
-                hi = true;
-            }
 
             return hInstance;
         }
-        
-        private set
-        {
-            hInstance = value;
-        }
     }
 
-    public int Wallet
-    {
-        get; private set;
-    }
-    private const string WalletKey = "PlayerWallet";
+    public int Wallet { get; private set; }
+    public int Jackpot { get; private set; }
 
     private WalletManager()
     {
-        Wallet = PlayerPrefs.GetInt(WalletKey, 100);
+        LoadWallet();
+        LoadJackpot();
     }
 
     public void AddMoney(int amount)
@@ -49,17 +36,9 @@ public class WalletManager
         {
             Wallet -= amount;
             SaveWallet();
-
             return true;
         }
-
         return false;
-    }
-
-    private void SaveWallet()
-    {
-        PlayerPrefs.SetInt(WalletKey, Wallet);
-        PlayerPrefs.Save();
     }
 
     public void AddToJackpot(int amount)
@@ -70,15 +49,54 @@ public class WalletManager
 
     public void ResetJackpot()
     {
-        Jackpot = 1000;
+        Jackpot = 0;
         SaveJackpot();
+    }
+
+    public void SaveWallet()
+    {
+        SaveData data = new SaveData { walletAmount = Wallet, jackpotAmount = Jackpot };
+        string json = JsonUtility.ToJson(data, true);
+        File.WriteAllText(GetPath(), json);
+    }
+
+    public void LoadWallet()
+    {
+        string path = GetPath();
+        if (File.Exists(path))
+        {
+            string json = File.ReadAllText(path);
+            SaveData data = JsonUtility.FromJson<SaveData>(json);
+            Wallet = data.walletAmount;
+        }
+        else
+        {
+            Wallet = 1000;
+        }
     }
 
     private void SaveJackpot()
     {
-        PlayerPrefs.SetInt(JackpotKey, Jackpot);
-        PlayerPrefs.Save();
+        SaveWallet(); // Jackpot is saved together with Wallet
     }
 
+    private void LoadJackpot()
+    {
+        string path = GetPath();
+        if (File.Exists(path))
+        {
+            string json = File.ReadAllText(path);
+            SaveData data = JsonUtility.FromJson<SaveData>(json);
+            Jackpot = data.jackpotAmount;
+        }
+        else
+        {
+            Jackpot = 0;
+        }
+    }
 
+    private string GetPath()
+    {
+        return Path.Combine(Application.persistentDataPath, "wallet_save.json");
+    }
 }
