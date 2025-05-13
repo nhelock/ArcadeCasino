@@ -165,8 +165,32 @@ public class GameManager : MonoBehaviour
 {
     if (Input.GetKeyDown(KeyCode.Escape))
     {
-        Debug.Log("GameManager detected Escape.");
-        OptionsMenu.Instance?.ToggleOptionsMenu();
+        Debug.Log("Escape pressed", this);
+        
+        // Get or create the instance if missing
+        if (OptionsMenu.Instance == null)
+        {
+            Debug.LogWarning("OptionsMenu missing - attempting to find...");
+            OptionsMenu existingMenu = FindObjectOfType<OptionsMenu>();
+            if (existingMenu != null)
+            {
+                Debug.Log("Found existing OptionsMenu", existingMenu);
+            }
+            else
+            {
+                Debug.LogError("No OptionsMenu found in scene!");
+                return;
+            }
+        }
+
+        // Force enable the menu if somehow disabled
+        if (!OptionsMenu.Instance.gameObject.activeSelf)
+        {
+            OptionsMenu.Instance.gameObject.SetActive(true);
+        }
+
+        // Toggle the canvas
+        OptionsMenu.Instance.ToggleOptionsMenu();
     }
 }
 }
