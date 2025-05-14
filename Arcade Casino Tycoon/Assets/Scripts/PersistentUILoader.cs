@@ -16,12 +16,13 @@ public class PersistentUILoader : MonoBehaviour
         if (optionsMenuPrefab != null)
         {
             GameObject instance = Instantiate(optionsMenuPrefab);
+            instance.name = "OptionsMenu (Instantiated)";  // Clear identification
             DontDestroyOnLoad(instance);
-            Debug.Log("[PersistentUILoader] OptionsMenu instantiated.");
+            Debug.Log("[PersistentUI] OptionsMenu instantiated", instance);
         }
         else
         {
-            Debug.LogError("[PersistentUILoader] OptionsMenu prefab not assigned!");
+            Debug.LogError("[PersistentUI] OptionsMenu prefab not assigned!");
         }
 
         isInitialized = true;

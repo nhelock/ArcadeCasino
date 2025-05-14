@@ -456,7 +456,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -812464687, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
+  m_Sprite: {fileID: -812464687, guid: 979034aef93096c4490c613161a0c906, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -487,14 +487,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberSprites:
-  - {fileID: 801586913, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: 1486645449, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -812464687, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -630319346, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -1260154026, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -744748018, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -861608951, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -2105768733, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
+  - {fileID: 801586913, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: 1486645449, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -812464687, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -630319346, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -1260154026, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -744748018, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -861608951, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -2105768733, guid: 979034aef93096c4490c613161a0c906, type: 3}
   slotImage: {fileID: 231909732}
   isSpinning: 0
   stopDelay: 2
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 288519747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab2fc20de86fb914294551f89fcce4fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 7571c7d25cdea95488a1d7c897b3fc57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   resultDisplayTime: 2
@@ -620,14 +620,14 @@ MonoBehaviour:
   - {fileID: 654458033}
   - {fileID: 231909732}
   slotSprites:
-  - {fileID: 801586913, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: 1486645449, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -812464687, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -630319346, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -1260154026, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -744748018, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -861608951, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -2105768733, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
+  - {fileID: 801586913, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: 1486645449, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -812464687, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -630319346, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -1260154026, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -744748018, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -861608951, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -2105768733, guid: 979034aef93096c4490c613161a0c906, type: 3}
   totalMoneyText: {fileID: 613412863}
   totalBetText: {fileID: 1681918790}
   resultText: {fileID: 1365977594}
@@ -1842,7 +1842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1486645449, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
+  m_Sprite: {fileID: 1486645449, guid: 979034aef93096c4490c613161a0c906, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1873,14 +1873,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberSprites:
-  - {fileID: 801586913, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: 1486645449, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -812464687, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -630319346, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -1260154026, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -744748018, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -861608951, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -2105768733, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
+  - {fileID: 801586913, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: 1486645449, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -812464687, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -630319346, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -1260154026, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -744748018, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -861608951, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -2105768733, guid: 979034aef93096c4490c613161a0c906, type: 3}
   slotImage: {fileID: 654458033}
   isSpinning: 0
   stopDelay: 1
@@ -3753,7 +3753,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 801586913, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
+  m_Sprite: {fileID: 801586913, guid: 979034aef93096c4490c613161a0c906, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3784,14 +3784,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberSprites:
-  - {fileID: 801586913, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: 1486645449, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -812464687, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -630319346, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -1260154026, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -744748018, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -861608951, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
-  - {fileID: -2105768733, guid: 63e40bfd12807b14fa1f60a2a9bff661, type: 3}
+  - {fileID: 801586913, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: 1486645449, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -812464687, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -630319346, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -1260154026, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -744748018, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -861608951, guid: 979034aef93096c4490c613161a0c906, type: 3}
+  - {fileID: -2105768733, guid: 979034aef93096c4490c613161a0c906, type: 3}
   slotImage: {fileID: 1879132518}
   isSpinning: 0
   stopDelay: 0.1

@@ -10,7 +10,7 @@ public class OptionsMenu : MonoBehaviour
 
     [Header("References")]
     public GameData gameData;
-    public GameObject optionsPanel;
+    public GameObject optionsCanvas;
 
     [Header("Save Confirmation")]
     public GameObject saveConfirmationPanel;
@@ -38,7 +38,7 @@ public class OptionsMenu : MonoBehaviour
 
     private void InitializeUI()
     {
-        if (optionsPanel != null) optionsPanel.SetActive(false);
+        if (optionsCanvas != null) optionsCanvas.SetActive(false);
         if (saveConfirmationPanel != null) saveConfirmationPanel.SetActive(false);
         Debug.Log("[OptionsMenu] UI Initialized.");
     }
@@ -65,14 +65,14 @@ public class OptionsMenu : MonoBehaviour
 
     public void ToggleOptionsMenu()
     {
-        if (optionsPanel == null)
+        if (optionsCanvas == null)
         {
-            Debug.LogWarning("[OptionsMenu] OptionsPanel reference is missing!");
+            Debug.LogWarning("[OptionsMenu] OptionsCanvas reference is missing!");
             return;
         }
 
-        bool isOpening = !optionsPanel.activeSelf;
-        optionsPanel.SetActive(isOpening);
+        bool isOpening = !optionsCanvas.activeSelf;
+        optionsCanvas.SetActive(isOpening);
 
         // Pause/unpause game
         Time.timeScale = isOpening ? 0f : 1f;
@@ -132,7 +132,7 @@ public class OptionsMenu : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Time.timeScale = 1f;
-        if (optionsPanel != null) optionsPanel.SetActive(false);
+        if (optionsCanvas != null) optionsCanvas.SetActive(false);
         Debug.Log($"[OptionsMenu] Scene loaded: {scene.name}. Menu closed.");
     }
 }
