@@ -4,8 +4,8 @@ using UnityEngine.UIElements;
 public class BackButtonController : MonoBehaviour
 {
     public enum BackTarget { MainMenu, GameMenu }
-    public BackTarget backTarget = BackTarget.GameMenu; // Default to GameMenu
-    public GameObject customTarget; // Optional for custom targets
+    public BackTarget backTarget = BackTarget.GameMenu;
+    public GameObject customTarget;
 
     void OnEnable()
     {
@@ -21,7 +21,6 @@ public class BackButtonController : MonoBehaviour
         {
             Debug.Log("Back button clicked!");
 
-            // Check where to go based on the BackTarget
             switch (backTarget)
             {
                 case BackTarget.MainMenu:

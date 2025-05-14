@@ -11,6 +11,15 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        if (GameData.Instance != null)
+        {
+            GameData.Instance.SaveGame();
+        }
+        else
+        {
+            Debug.LogWarning("GameData.Instance is null. Cannot save.");
+        }
+
         ShowMainMenu();
     }
 
@@ -22,7 +31,6 @@ public class MainMenu : MonoBehaviour
 
     private void RefreshUIReferences()
 {
-    // Ensure the GameObjects are correctly found
     if (MenuPanel == null)
     {
         MenuPanel = GameObject.Find("MenuPanel");
@@ -48,10 +56,8 @@ public class MainMenu : MonoBehaviour
 {
     Debug.Log("Showing Game Menu...");
 
-    // Refresh UI references
     RefreshUIReferences();
 
-    // Deactivate the MenuPanel and activate the GameMenu
     if (MenuPanel != null)
     {
         MenuPanel.SetActive(false);
