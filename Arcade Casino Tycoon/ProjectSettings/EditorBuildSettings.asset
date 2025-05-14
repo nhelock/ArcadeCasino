@@ -19,14 +19,14 @@ EditorBuildSettings:
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/JackpocketSlotScene.unity
-    guid: d2a2d02369537114d99430087666cb9d
+    guid: 7d32f4c856f14d143a908b19e1500e02
   - enabled: 1
     path: Assets/Scenes/SimpleSlotsScene.unity
-    guid: b2ac00def22bbfa4781aca408067609c
+    guid: 5ee2ac6f5cea6b04bbd1c565180152d4
   - enabled: 1
     path: Assets/RouletteWheelScene.unity
     guid: 40e8f5c3ff60bf243b0d30e6e4a2e929
-  - enabled: 1
+  - enabled: 0
     path: Assets/Blackjack2.unity
     guid: 86a0fc85c1ede564ba7a84a36658bdbf
   m_configObjects: {}
