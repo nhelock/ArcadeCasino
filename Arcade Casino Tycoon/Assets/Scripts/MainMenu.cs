@@ -42,10 +42,24 @@ public class MainMenu : MonoBehaviour
     public void LoadGame()
     {
         if (SaveSystem.SaveFileExists())
-            ShowGameMenu();
+        {
+            SaveData data = SaveSystem.Load();
+            if (data != null)
+            {
+                MenuGameManager.Instance.ApplySaveData(data); 
+                ShowGameMenu();
+            }
+            else
+            {
+                Debug.LogWarning("Failed to load save data.");
+            }
+        }
         else
+        {
             Debug.LogWarning("No save found.");
+        }
     }
+
 
     public void ExitGame()
     {

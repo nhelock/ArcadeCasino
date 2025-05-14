@@ -64,6 +64,7 @@
     <Compile Include="Assets\WheelSpin.cs" />
     <Compile Include="Assets\RouletteWheel.cs" />
     <Compile Include="Assets\Scripts\SlotMachine.cs" />
+    <Compile Include="Assets\Scripts\MenuGameManager.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\SlotReel.cs" />
     <Compile Include="Assets\RouletteBetManager.cs" />
