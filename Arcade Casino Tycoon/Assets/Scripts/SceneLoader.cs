@@ -1,20 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void LoadSceneByName(string sceneName) {
-        GameData gameData = FindObjectOfType<GameData>();
-        if (gameData != null)
+    public void LoadSceneByName(string sceneName)
+    {
+        if (GameData.Instance != null)
         {
-            gameData.SaveGame();
+            GameData.Instance.SaveGame();
         }
         else
         {
-            Debug.LogWarning("No GameData object found in the scene.");
+            Debug.LogWarning("GameData.Instance is null. Cannot save.");
         }
 
         EventSystem currentEventSystem = EventSystem.current;
@@ -22,6 +20,7 @@ public class SceneLoader : MonoBehaviour
         {
             Destroy(currentEventSystem.gameObject);
         }
+
         SceneManager.LoadScene(sceneName);
     }
 }

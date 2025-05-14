@@ -81,29 +81,23 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
+        WalletManager.Instance.SetWallet(1000);
+        WalletManager.Instance.SetJackpot(1000);   
         ShowGameMenu();
     }
 
+
+
+
     public void LoadGame()
     {
-        if (SaveSystem.SaveFileExists())
-        {
-            SaveData data = SaveSystem.Load();
-            if (data != null)
-            {
-                MenuGameManager.Instance.ApplySaveData(data);
-                ShowGameMenu();
-            }
-            else
-            {
-                Debug.LogWarning("Failed to load save data.");
-            }
-        }
-        else
-        {
-            Debug.LogWarning("No save found.");
-        }
+        WalletManager.Instance.LoadWallet();
+
+        Debug.Log("Wallet loaded. Current amount: " + WalletManager.Instance.Wallet);
+        ShowGameMenu();
     }
+
+
 
     public void ExitGame()
     {

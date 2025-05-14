@@ -17,15 +17,21 @@ public class GameData : MonoBehaviour
         Debug.Log("GameData singleton initialized.");
     }
 
+    public void NewGame()
+    {
+        WalletManager.Instance.ResetGameData(1000, 1000); // default values
+        Debug.Log("New game started.");
+    }
+
     public void SaveGame()
     {
         WalletManager.Instance.SaveWallet();
-        Debug.Log("Game saved (wallet only).");
+        Debug.Log("Game saved.");
     }
 
     public void LoadGame()
     {
         WalletManager.Instance.LoadWallet();
-        Debug.Log($"Game loaded. Wallet: {WalletManager.Instance.Wallet}");
+        Debug.Log($"Game loaded. Wallet: {WalletManager.Instance.Wallet}, Jackpot: {WalletManager.Instance.Jackpot}");
     }
 }
